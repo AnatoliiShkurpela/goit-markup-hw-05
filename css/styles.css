@@ -17,6 +17,7 @@
  /*margin between elements from the side*/
  --transition-duradion-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
 }
 
  header .conteiner {
@@ -241,7 +242,7 @@ font-family: 'Roboto',sans-serif;
         border: none;
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: box-shadow,background-color var(--transition-duradion-and-funk);
+        transition: box-shadow var(--transition-duradion-and-funk);
 }   
 
 .modal-btn:hover {
@@ -378,7 +379,8 @@ font-family: 'Roboto',sans-serif;
     border: 1px solid var(--secondary-text-color);
     height: 100%;
     width: 100%;
-    transition: color,border var(--transition-duradion-and-funk);
+    transition: color var(--transition-duradion-and-funk),
+    border var(--transition-duradion-and-funk);
   
 }
 
@@ -386,7 +388,8 @@ font-family: 'Roboto',sans-serif;
     fill: var(--secondary-text-color);
     width: 104px;
     height: 56px;
-    transition: color, fill var(--transition-duradion-and-funk);
+    transition: color var(--transition-duradion-and-funk),
+    fill var(--transition-duradion-and-funk);
 }
 
 .customers-list-link:hover,
@@ -475,7 +478,7 @@ font-family: 'Roboto',sans-serif;
     height: 100%;
     transform: translate(0, 100%);
     transition:transform var(--transition-duradion-and-funk);
-    color: var(--secondary-color-fourth);
+    color:var(--secondary-color-fourth);
     background-color: var(--secondary-color-first);
     font-weight: 400;
     font-size: 16px;
@@ -507,7 +510,10 @@ font-family: 'Roboto',sans-serif;
     padding-bottom: 12px;
     padding-left: 24px;
     border: 1px solid var(--secondary-color-third);
-    transition: color, background-color, border-color, box-shadow var(--transition-duradion-and-funk);
+    transition: color var(--transition-duradion-and-funk),
+    box-shadow var(--transition-duradion-and-funk),
+    border-color var(--transition-duradion-and-funk),
+    background-color var(--transition-duradion-and-funk);
 }
 
 .portfolio-button {
@@ -646,8 +652,10 @@ margin-left: 120px;
     background: var(--secondary-color-third);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-    transition: box-shadow,background var(--transition-duradion-and-funk);
-}
+    transition: box-shadow var(--transition-duradion-and-funk),
+    background-color var(--transition-duradion-and-funk);
+    }
+
 
 .modal-close-button-icon{
     transition: var(--transition-duradion-and-funk);
